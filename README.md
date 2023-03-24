@@ -41,15 +41,19 @@ To start deployment
 ## Features
 There are different parts in the main window: 
 1.Mouse_pad Mode: Where the input is the position of mouse is considerd as the input signal of the program that being filterd.
+
 ![main widow](./images/upload.jpeg)
 
 2.CSV file Mode: Where you can upload a csv file with the values of point and being drawn.
+
 ![main widow](./images/csvupload.jpeg)
 
 3.Unit Circle: Where you can put zeros and poles and depend on the position we can draw the adjacent filter, you can also add or remove the zero and poles
+
 ![main widow](./images/unitcircle.jpeg)
 
 4.Magnitude and Response graphs: where you the magnitude and response are plotted to deal with.
+
 ![main widow](./images/middle1.jpeg)
 
 5.All Pass page: This is considerd the second page where we try to modify the existed filter and consisted of two parts the plots of magnitude and response after the all pass filter and catalog for some examples.
