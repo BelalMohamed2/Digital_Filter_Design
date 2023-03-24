@@ -17,10 +17,9 @@ Designing digital filters involves choosing the filter parameters, such as the c
 
 ## Built with
 
-![programming language]
-![Python](https://img.shields.io/badge/programmig%20language-Python-red)
-![JavaScript](https://img.shields.io/badge/programmig%20language-JavaScript-green).
-This project is written in ![Python](https://img.shields.io/badge/Python-red) and 
+![programming languages]
+![Python](https://img.shields.io/badge/Python-red)
+![JavaScript](https://img.shields.io/badge/JavaScript-green).
 ![Framework](https://img.shields.io/badge/Framework-Flask-blue)
 ![styling](https://img.shields.io/badge/Styling-CSS-ff69b4)
 
