@@ -1,0 +1,331 @@
+html{
+    background-color: #212529;
+    font-family: "Open Sans";
+    overflow-x: hidden;
+    color: #ededee;
+}
+
+/* all pass */
+.dropdown-check-list {
+    display: inline-block;
+}
+
+.dropdown-check-list .anchor {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+}
+.btn-cricle-control, .dropdown-check-list, .anchor{
+    background-color: #212529;
+    color: #ededee;
+    font-size: small;
+    font-weight: 600;
+    border: #212529;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn-cricle-control:hover{
+    color: #febc2c;
+    cursor: pointer;
+}
+
+.trans-btn{
+    background-color: #2a2e32;
+    color: #ededee;
+    font-size: larger;
+    font-weight: 600;
+    border: #212529;
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 7px;
+}
+.trans-btn:hover{
+    color: #febc2c;
+    cursor: pointer;
+}
+
+
+.dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+}
+
+.dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+}
+
+.dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border-top: none;
+}
+
+.dropdown-check-list ul.items li {
+    list-style: none;
+}
+
+.dropdown-check-list.visible .anchor {
+    font-weight: bold;
+    font-size: 12px;
+    color: #febc2c;
+}
+
+.dropdown-check-list.visible .items {
+    display: block;
+}
+
+
+ #all-pass, #real-time-filter{
+    flex-direction: column;
+    gap: 10px;
+ }
+
+#all-pass-response, #real-time-filter-plots{
+    flex-direction: row;
+}
+
+#all-pass-unit-circle, #real-time-filter-container{
+    gap: 10px;
+}
+
+
+#new-all-pass-coef{
+    padding: 10px;
+    font-weight: 600;
+}
+
+#new-value{
+    max-width: 100px;
+    background-color: #212529;
+    color: #ededee;
+    font-size: small;
+    border: #212529;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#all-pass-response-container , .half-plot-container{
+    min-width: 48%;
+    max-height: 48%;
+}
+
+#all-pass-response-title, #final-filter-response-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* allPass filter gallery */
+.gallery-box{
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2a2e32;
+    border-radius: 8px;
+    margin: 5px;
+    width: 30%;
+}
+.gallery-box h2{
+    text-align: center;
+
+}
+.gallery{
+    text-align: center;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.gallery img{
+    width: 230px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+/* img[title]:hover::after{
+    background-color: #212529;
+    color: aquamarine;
+    border-radius: 50%;
+} */
+.gallery img:hover{
+    filter: grayscale(0);
+    filter: saturate(100);
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+/* #csv-submitter, #stop-filtering{
+    padding: 8px;
+    font-weight: 600;
+} */
+
+/* #real-time-filter-plots h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#slider-value{
+    margin-top: 3px;
+    font-weight: bold;
+    color: #0060df;
+} */
+
+
+/* boxes of graphes */
+#filter-response, #all-pass-response ,#real-time-filter-plots{
+    min-width: 40%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+#pad{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    max-width: 55vh;
+}
+
+/* plot graphs */
+.response-plotting{
+    height: 35vh;
+    width:98%;
+}
+.signal-plotting{
+    height: 20vh;
+    width:98%;
+    margin: 5px;
+}
+
+
+/* buttons */
+.btn{
+    background-color: #212529;
+    color: #ededee;
+    font-size: medium;
+    border: #212529;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+.btn:hover{
+    color: #febc2c;
+    cursor: pointer;
+}
+
+#uploadFilter{
+    margin-bottom: 50px;
+    color: #ededee;
+}
+#downloadFilter{
+    margin: 10px;
+    cursor: pointer;
+    background-color: #cccccc;
+    border-radius: 4px;
+    font-size: small;
+    font-weight: 600;
+}
+/* pad */
+#mousepad{
+    background-color: #cccccc;
+    border: solid black 5px;
+    border-radius: 20px;
+    width: 90%;
+    height: 20vh;
+}
+
+/* plot title */
+.freq-response-title, .title{
+    margin: 0;
+}
+
+/* Boxes */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2a2e32;
+    border-radius: 8px;
+    /* padding:10px; */
+    margin: 5px;
+    width: 30%;
+    min-height: 600px;
+}
+
+/* titles */
+#circle-title, #all-pass-title{
+    text-align: center;
+}
+
+/* cicle */
+#zero{
+    color: #febc2c;
+}
+
+
+#circle-control{
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#circle-control, #circle-canvas, #all-pass-unit-circle, #real-time-filter-container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5;
+}
+
+/* sections */
+#filter-design, #all-pass, #real-time-filter{
+    display: flex;
+    flex-direction: row;
+    column-gap: 9px;
+    width: 100%; 
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #cccccc;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0;
+    min-height: 40px;
+    margin: 0;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #febc2c;
+  }
+  .tabcontent{
+    padding: 10px;
+    min-height: 25vh;
+  }
+#listOfA{
+    overflow-y: auto;
+    max-height: 70px;
+}
