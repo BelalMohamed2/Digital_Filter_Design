@@ -17,7 +17,9 @@ Designing digital filters involves choosing the filter parameters, such as the c
 
 ## Built with
 
-![programming language](https://img.shields.io/badge/programmig%20language-Python-red https://img.shields.io/badge/programmig%20language-JavaScript-green)
+![programming language](https://img.shields.io/badge/programmig%20language-Python-red)
+![programming language](https://img.shields.io/badge/programmig%20language-JavaScript-green)
+This project is written in ![Python](https://img.shields.io/badge/Python-red) and ![JavaScript](https://img.shields.io/badge/JavaScript-green).
 ![Framework](https://img.shields.io/badge/Framework-Flask-blue)
 ![styling](https://img.shields.io/badge/Styling-CSS-ff69b4)
 
@@ -27,7 +29,7 @@ Designing digital filters involves choosing the filter parameters, such as the c
  Install streamlit
 
 ```bash
-  pip install streamlit
+  pip install Flask
 ```
 To start deployment 
 ```bash
